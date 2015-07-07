@@ -1,0 +1,39 @@
+[user]
+	name = Rich Dammkoehler
+	email = rpd@noradltd.com
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	showbranch = auto
+[alias]
+	b = branch
+	bs = !git bisect
+	c = commit -am
+        co = checkout
+	fu = fetch upstream
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	lag = log --all --graph --decorate
+	lg = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	ln = log --no-merges
+	ll = log --oneline --graph --decorate --all
+	mf = merge --ff-only
+	mn = merge --no-ff
+	ms = merge --squash
+	po = push origin
+	ph = push heroku
+	pr = pull --rebase
+	rp = rebase -p
+	sm = !git submodule
+	ss = status --short
+	st = status
+	wc = whatchanged
+	wtf = blame -w -c
+[core]
+	autocrlf = false
+	safecrlf = true
+	excludesfile = /home/rich/.gitignore
+[diff]
+	noprefix = true
+[push]
+	default = current

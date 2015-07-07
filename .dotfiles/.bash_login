@@ -1,0 +1,18 @@
+
+export PATH=$PATH:/Users/rich/bin
+source ~/.git-completion.sh
+source ~/.git-prompt.sh
+source ~/.profile
+export PS1='\h $(__git_ps1 "{%s}"): '
+export MY_BIN=/Users/rich/bin
+export ANT_HOME=$MY_BIN/apache-ant-1.8.4
+export MAVEN_HOME=$MY_BIN/apache-maven-3.2.5
+export PATH=$PATH:$MY_BIN:$ANT_HOME/bin:$MAVEN_HOME/bin
+alias rspec="rspec -f documentation -c"
+alias cucumber="cucumber -s"
+
+source ~/.swear 
+
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
