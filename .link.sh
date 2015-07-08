@@ -7,7 +7,10 @@
 ##
 ############
 
-home=~ 
+default_home=~
+home=${1-$default_home}
+
+echo $home
 
 for f in `ls -a1 .dotfiles`;
 do
