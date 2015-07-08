@@ -15,7 +15,7 @@ do
     then
 	if [[ "$f" != ".." ]]
 	then
-	    echo ln -s $f ~/$f
+	    ln -s `pwd`/.dotfiles/$f ~/$f
 	fi
     fi
 done
