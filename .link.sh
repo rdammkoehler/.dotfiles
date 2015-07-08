@@ -18,7 +18,7 @@ do
     then
 	if [[ "$f" != ".." ]]
 	then
-	    ln -siv `pwd`/.dotfiles/$f $home/$f
+	    ln -shiv `pwd`/.dotfiles/$f $home/$f
 	fi
     fi
 done
