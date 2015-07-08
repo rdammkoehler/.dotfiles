@@ -7,7 +7,7 @@
 ##
 ############
 
-## home = 
+home=~ 
 
 for f in `ls -a1 .dotfiles`;
 do
@@ -15,7 +15,7 @@ do
     then
 	if [[ "$f" != ".." ]]
 	then
-	    ln -s `pwd`/.dotfiles/$f ~/$f
+	    ln -siv `pwd`/.dotfiles/$f $home/$f
 	fi
     fi
 done
