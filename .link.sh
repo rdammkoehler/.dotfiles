@@ -23,6 +23,7 @@ do
 	fi
     fi
 done
-mv $script_dir/LICENSE $script_dir/.dotfiles
-mv $script_dir/README.md $script_dir/.dotfiles
+git mv $script_dir/LICENSE $script_dir/.dotfiles
+git mv $script_dir/README.md $script_dir/.dotfiles
+git commit -am 'LICENSE and README.md stashed into oblivion, script completed'
 
