@@ -1,5 +1,5 @@
 .dotfiles
-##############
+#########
 
 My dotfiles shared via github. How nice. I took all the sensitive bits out of course, so you are on your own for .ssh/
 
@@ -14,6 +14,8 @@ Then you want to run the *hidden* script therin that will link all these shiny f
 ```bash
 . .link.sh
 ```
+
+Each file in the .dotfiles folder will be linked into the current users home folder. If the file or link exists you will be prompted to overwrite it (or not). When the script finishes it moves the LICENSE and README.md files into the .dotfiles folder so the don't clutter up the joint. 
 
 The result is something like this;
 
@@ -30,6 +32,8 @@ lrwxr-xr-x    1 rich  staff     46 Jul  7 23:42 .swear -> /Users/rich/.dotfiles/
 lrwxr-xr-x    1 rich  staff     50 Jul  7 23:42 .tmux.conf -> /Users/rich/.dotfiles/.tmux.conf
 lrwxr-xr-x    1 rich  staff     47 Jul  7 23:42 .zlogin -> /Users/rich/.dotfiles/.zlogin
 lrwxr-xr-x    1 rich  staff     46 Jul  7 23:42 .zshrc -> /Users/rich/.dotfiles/.zshrc
+lrwxr-xr-x    1 rich  wheel     26 Jul 27 16:34 LICENSE -> /Users/rich/.dotfiles/LICENSE
+lrwxr-xr-x    1 rich  wheel     28 Jul 27 16:34 README.md -> /Users/rich/.dotfiles/README.md
 ```
 
 Now remember, wherever you put the repo (your home folder is good, but wherever) the script will link the files in the .dotfiles folder to your home folder. The command uses an absolute location, not a relative one. 
