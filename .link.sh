@@ -9,6 +9,7 @@
 
 default_home=~
 home=${1-$default_home}
+script_dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 echo $home
 
@@ -18,7 +19,10 @@ do
     then
 	if [[ "$f" != ".." ]]
 	then
-	    ln -shiv `pwd`/.dotfiles/$f $home/$f
+	    ln -shiv $script_dir/.dotfiles/$f $home/$f
 	fi
     fi
 done
+mv $script_dir/LICENSE $script_dir/.dotfiles
+mv $script_dir/README.md $script_dir/.dotfiles
+
