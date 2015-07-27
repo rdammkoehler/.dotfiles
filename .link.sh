@@ -27,3 +27,4 @@ git mv $script_dir/LICENSE $script_dir/.dotfiles
 git mv $script_dir/README.md $script_dir/.dotfiles
 git commit -am 'LICENSE and README.md stashed into oblivion, script completed'
 
+ls -1 $home >> $script_dir/.gitignore

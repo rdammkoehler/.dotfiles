@@ -15,7 +15,7 @@ Then you want to run the *hidden* script therin that will link all these shiny f
 . .link.sh
 ```
 
-Each file in the .dotfiles folder will be linked into the current users home folder. If the file or link exists you will be prompted to overwrite it (or not). When the script finishes it moves the LICENSE and README.md files into the .dotfiles folder so the don't clutter up the joint. 
+Each file in the .dotfiles folder will be linked into the current users home folder. If the file or link exists you will be prompted to overwrite it (or not). When the script finishes it moves the LICENSE and README.md files into the .dotfiles folder so the don't clutter up the joint. Once that is complete the .gitignore is updated so that files already in the target directory (typically your home folder) are included and therefore not subject to being commited)
 
 The result is something like this;
 
