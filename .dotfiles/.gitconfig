@@ -12,6 +12,7 @@
 	c = commit -am
         co = checkout
 	fu = fetch upstream
+	g = grep
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	lag = log --all --graph --decorate
 	lg = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
@@ -20,20 +21,27 @@
 	mf = merge --ff-only
 	mn = merge --no-ff
 	ms = merge --squash
+	p = pull
 	po = push origin
 	ph = push heroku
 	pr = pull --rebase
+	pu = push upstream
 	rp = rebase -p
+	rum = rebase upstream/master
 	sm = !git submodule
 	ss = status --short
 	st = status
 	wc = whatchanged
 	wtf = blame -w -c
 [core]
-	autocrlf = false
+	autocrlf = input
 	safecrlf = true
 	excludesfile = /home/rich/.gitignore
 [diff]
 	noprefix = true
 [push]
 	default = current
+[filter "lfs"]
+	smudge = git-lfs smudge %f
+	required = true
+	clean = git-lfs clean %f

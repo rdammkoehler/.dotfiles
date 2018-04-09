@@ -1,0 +1,8 @@
+alias ag="ag --pager='less -XFR'"
+alias cucumber="cucumber -s"
+alias d="docker"
+alias dc="docker-compose"
+alias g="git"
+alias gg="git grep"
+alias rspec="rspec -f documentation -c"
+alias trim='git fetch --prune && git branch --merged | grep -E -v "^((\* )|\s*(develop|master)$)" | xargs git branch -d'
