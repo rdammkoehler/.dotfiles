@@ -12,3 +12,7 @@ export PATH=$PATH:$MY_BIN:$ANT_HOME/bin:$MAVEN_HOME/bin:$HEROKU_PATH
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+#for RouteOne
+#add ChromeDriver to path
+export PATH=$PATH:/Users/rich/Documents/NOradLtd/clients/Pillar/RouteOne/etc
