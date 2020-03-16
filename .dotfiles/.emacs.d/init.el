@@ -3,6 +3,8 @@
 (set-cursor-color "red")
 (set-mouse-color "goldenrod")
 (set-face-background 'region "blue")
+(set-face-foreground 'mode-line "black")
+(set-face-background 'mode-line "green")
 (set-foreground-color "white")
 (set-background-color "black")
 ;(c-set-style "k&r")
@@ -23,3 +25,4 @@
 
 (require 'undo-tree)
 (global-undo-tree-mode 1)
+

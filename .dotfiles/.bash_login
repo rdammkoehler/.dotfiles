@@ -1,4 +1,4 @@
-export PATH=$PATH:/Users/rpd/bin
+export PATH=$PATH:/Users/rpd/bin:/Users/rpd/.local/bin
 source ~/.git-completion.sh
 source ~/.git-prompt.sh
 export PS1='\h $(__git_ps1 "{%s}") - '
