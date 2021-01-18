@@ -11,6 +11,7 @@
 	bs = !git bisect
 	c = commit -am
         co = checkout
+	f = fetch
 	fu = fetch upstream
 	g = grep
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
