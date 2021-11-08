@@ -8,4 +8,7 @@ alias g="git"
 alias gg="git grep"
 alias rspec="rspec -f documentation -c"
 alias trim='git fetch --prune && git branch --merged | grep -E -v "^((\* )|\s*(develop|master)$)" | xargs git branch -d'
+alias bv='pip install -r requirements.txt'
 alias rv='rm -Rf venv && python -m venv venv && source venv/bin/activate && pip install --upgrade pip setuptools && deactivate'
+alias sv='source venv/bin/activate'
+alias uv='pip install pip setuptools --upgrade'

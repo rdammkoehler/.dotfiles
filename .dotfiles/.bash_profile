@@ -23,3 +23,9 @@ export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
 #export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 #export LDFLAGS="-L/usr/local/opt/libpq/lib"
 #export CPPFLAGS="-I/usr/local/opt/libpq/include"
+
+if [ -z "$TMUX" ]; then
+    tmux attach -t default || tmux new -s default
+fi
+export PATH="/usr/local/sbin:$PATH"
+source "$HOME/.cargo/env"

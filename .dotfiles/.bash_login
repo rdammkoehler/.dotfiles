@@ -4,3 +4,4 @@ source ~/.git-prompt.sh
 export PS1='\h $(__git_ps1 "{%s}") - '
 source ~/.aliases
 source ~/.swear
+source "$HOME/.cargo/env"

@@ -1,5 +1,5 @@
 [user]
-	name = Rich Dammkoehler
+	name = rdammkoehler
 	email = rpd@noradltd.com
 [color]
 	branch = auto
@@ -46,3 +46,7 @@
 	smudge = git-lfs smudge %f
 	required = true
 	clean = git-lfs clean %f
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
