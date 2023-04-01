@@ -25,7 +25,19 @@ export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
 #export CPPFLAGS="-I/usr/local/opt/libpq/include"
 
 if [ -z "$TMUX" ]; then
-    tmux attach -t default || tmux new -s default
+	tmux attach -t default || tmux new -s default
+    # iterm integrated tmux -CC attach -t default || tmux -CC new -s default
 fi
 export PATH="/usr/local/sbin:$PATH"
 source "$HOME/.cargo/env"
+
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/rpd/projects/ConstructConnect/gcloud-cli/google-cloud-sdk/path.bash.inc' ]; then . '/Users/rpd/projects/ConstructConnect/gcloud-cli/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/rpd/projects/ConstructConnect/gcloud-cli/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/rpd/projects/ConstructConnect/gcloud-cli/google-cloud-sdk/completion.bash.inc'; fi

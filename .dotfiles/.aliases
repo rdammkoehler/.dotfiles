@@ -1,14 +1,13 @@
 alias ag="ag --pager='less -XFR'"
+alias bv='pip install -r requirements.txt'
 alias cowsay="cowsay -f ~/etc/monk.cow"
 alias cucumber="cucumber -s"
 alias d="docker"
 alias dc="docker-compose"
-alias fortune="cowsay -f ~/etc/monk.cow `fortune`"
 alias g="git"
 alias gg="git grep"
 alias rspec="rspec -f documentation -c"
-alias trim='git fetch --prune && git branch --merged | grep -E -v "^((\* )|\s*(develop|master)$)" | xargs git branch -d'
-alias bv='pip install -r requirements.txt'
 alias rv='rm -Rf venv && python -m venv venv && source venv/bin/activate && pip install --upgrade pip setuptools && deactivate'
+alias trim='git fetch --prune && git branch --merged | grep -E -v "^((\* )|\s*(develop|master)$)" | xargs git branch -d'
 alias sv='source venv/bin/activate'
 alias uv='pip install pip setuptools --upgrade'

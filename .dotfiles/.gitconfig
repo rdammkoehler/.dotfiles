@@ -23,6 +23,7 @@
 	mn = merge --no-ff
 	ms = merge --squash
 	p = pull
+        peek = stash show -p
 	po = push origin
 	ph = push heroku
 	pr = pull --rebase
