@@ -38,7 +38,7 @@
 [core]
 	autocrlf = input
 	safecrlf = true
-	excludesfile = /home/rich/.gitignore
+	excludesfile = /Users/rpd/.gitignore
 [diff]
 	noprefix = true
 [push]

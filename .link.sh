@@ -19,13 +19,20 @@ do
     then
 	if [[ "$f" != ".." ]]
 	then
+		if [[ -e "$home/$f" ]]
+		then
+			cp "$home/$f" "$home/original$f"
+		fi 
 	    ln -shiv $script_dir/.dotfiles/$f $home/$f
 	fi
     fi
 done
-git mv $script_dir/LICENSE $script_dir/.dotfiles
-git mv $script_dir/README.md $script_dir/.dotfiles
-git commit -am 'LICENSE and README.md stashed into oblivion'
+
+# git mv $script_dir/LICENSE $script_dir/.dotfiles
+# git mv $script_dir/README.md $script_dir/.dotfiles
+# git commit -am 'LICENSE and README.md stashed into oblivion'
 
 ls -1 $home >> $script_dir/.gitignore
-git commit -am '.gitignore updated to hide all other files from git, changes updated in git'
+# git commit -am '.gitignore updated to hide all other files from git, changes updated in git'
+
+echo "You should open a new shell now."
