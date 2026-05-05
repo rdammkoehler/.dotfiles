@@ -6,4 +6,5 @@ source ~/.git-completion.sh
 source ~/.git-prompt.sh
 export PS0='\h $(__git_ps1 "{%s}") - '
 
-[[ -r ~/venv/bin/activate ]] && source ~/venv/bin/activate
+# Added by `rbenv init` on Sun Mar  1 16:12:03 CST 2026
+eval "$(rbenv init - --no-rehash bash)"
